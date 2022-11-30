@@ -1,0 +1,387 @@
+body {
+	font-family: 'Montserrat', sans-serif; /* fonte importada google fontes */
+}
+
+header {
+	background: #bbbbbb;
+	padding: 20px 0;
+	
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto; /*centralizar modo automatico */
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase; /* deixando o texto em maiusculas*/
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none; /* tirando todas decoração do texto*/
+}
+
+nav a:hover {
+	color: #c78c19;
+	text-decoration: underline;
+}
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top; 
+	margin: 0 1.5%; /* Espassamento externo */
+	padding: 30px 20px; /* Espassamento interno */
+	box-sizing: border-box; /* o espassamento interno fica dentro da largura total*/
+	border: 2px solid #000000; /* fica entre o padding e o margin */
+	border-radius: 10px;/* Raio da borda ou canto arredondado dos elementos. */
+
+}
+
+.produtos li:hover { /*alterando a cor da borda quando passo o mouse por cima*/
+	border-color: #c78c19;
+
+
+}	
+
+.produtos li:active { /* alterando a cor da borda quando click no elemento*/
+	border-color: #088c19;
+}
+
+.produtos li:hover h2 { /* alterando o tamanho do texto quando passo o mouse em cima */
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold; /*Peso da font */
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	background: url(bg.jpg);
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #ffffff;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+main { /* limitando o tamanho da página */
+	width: 940px;
+    margin: 40px auto;
+}
+
+form { /*criando margem entre os formulários */
+	
+}
+
+
+
+form label, form legend { 
+	display: block;/* alterando de inline-block para block. ocupando a linha inteira*/
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin-bottom: 20px; /*espassamento externo do input */
+	padding: 10px 25px; /*espassamento interno do input*/
+	width: 50%; /* input ocupando 50 % da página */
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: #ffffff; /* cor da letra */
+	font-weight: bold; /* peso da letra */
+	font-size: 18px; /* tamanho da fonte */
+	border: none; /* sem borda */
+	border-radius: 5px; /* aredondamento do botão enviar */
+	transition: 1s all; /* transição do fundo e o tempo para tal*/
+	cursor: pointer; /* o cursor vira maozinha para click */
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2); /* aumenta o elemento 1.2% */
+	/*transform: rotate(70deg);  rotação do elemento em graus */
+}
+
+
+/*
+p { /*preferencia: = 1 
+	color: red;
+}
+
+form p {/*preferencia: 1 + 1 = 2 *
+	color: blue;
+}
+
+.teste { /*preferencia: = 10 *
+	color: yellow;
+}
+
+p.teste {/*preferencia: 1 + 10 = 11  * 
+	color: orange;
+}
+
+#teste { /*preferencia: = 100 * 
+	color: pink;
+}
+/*preferencia = 1000 se aplicar diretamente no html style inline */ 
+
+
+table {
+	margin: 20px 0 40px;
+}
+thead {
+	background: #555555;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid black;
+	padding: 8px 15px;
+}
+
+/* css da página inicial */
+.banner {
+	width: 100%;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em; /* aumenta a fonta ou espassamento em a quandidade de vezes que desejar */
+	margin: 0 0 1em;
+	clear: left;
+	/*text-shadow: 2px 2px #000000;  sobra para texto*/
+	 /* Como limpar o float, com a propriedade clear do CSS */
+	/*color: rgba(0, 0, 0, 0.3);  criando opacidade em textos*/
+}
+
+/*estilizar somente a primeira letra com a propriedade :first-letter 
+.titulo-principal:first-letter {
+	font-weight: bold;
+}
+*/
+/*
+.titulo-principal:before { propriedade para colocar um icone não selecionavel 
+	content: "[ ";
+}
+.titulo-principal:after {
+	content: " ]";
+}
+*/
+/*
+p:first-line { estilizando somente a primeira linha.
+	font-style: italic;
+}
+*/
+.principal {
+	padding: 3em 0; /* espassamento interno em 3 vezes para cima e para baixo e zero para as laterais */
+	background: #fefefe;
+	width: 940px; /* tamanho fixo da class prindipal */
+	margin: 0 auto;/* margem zero em cima e em baixo automatico para os lados */
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.utensilios {
+	width: 120px;
+	float: left; /* o float:left quanto o float: right servem para que o elemento se destaque na tela, deixe de ocupar o espaço em que estava, para que os outros elementos possam se posicionar ao redor dele */
+	margin: 0 20px 20px 0;
+}
+
+.mapa {
+	padding: 3em 0;
+	/*propriedade gradient inicia em uma cor e vai até chegar na ultima cor.
+	Na primeira propriedade a inclinação do meu gradient 45deg 
+	o percentual inicial. background: linear-gradient(90deg, 0% orange, 25% blue, 50% red, 75% black);
+	gradient em circulo, não tem o 45deg. background: radial-gradient( orange 50%, blue, red, black); */
+	background: linear-gradient(#fefefe, #888888);
+	
+}
+
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.beneficios {
+	padding: 3em 0;
+	background: #888888;
+	/*box-shadow: inset 0 0 30px #ff0000; sobra interna dentro do elemento*/
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+.lista-benecicios {
+	width: 40%;
+	display: inline-block; /*usando o inline-block não podemos deixar espaço no html entre as tag para não refletir no resultado */
+	vertical-align: top; /* alinhando pela parte de cima da lista */
+}
+
+.itens {
+	line-height: 1.5;
+}
+
+/* first-child ou last-child estilazamos o primeiro ou ultimo da lista.
+nth-child(4) estilizo o quarto elemento da lista. 
+nth-child(2n) estiliza os elemento pares da lista*/
+.itens:first-child { 
+	font-weight: bold;
+}
+
+.itens:before {
+	content: "🟊";
+}
+
+.imagem-beneficios {
+	width: 60%;
+	opacity: 1;
+	box-shadow: 10px 10px 10px #000000;
+	
+}
+
+.imagem-beneficios:hover {	
+	opacity: 0.3;
+	transition: 400ms;
+
+}
+.video {
+	width: 560px;
+	margin: 2em auto;
+}
+
+/* seletores especiais do css3
+}
+main > p { /* seleção filho emediato ao main 
+	background: red;
+}
+
+img + p { /* Seletor +, para acessar o primeiro irmão de determinado elemento. Por exemplo, para acessar o primeiro p após um img:
+	background: blue;
+}
+
+img ~ p {/* Seletor ~, para acessar todos os irmãos de determinado elemento. Por exemplo, para acessar todos os p após um img: 
+	background: yellow;
+}
+
+.principal p:not(#missao) {/* seleção por negação seleciona todos menos missao  
+	background: orange;
+}
+*/
+
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .conteudo-beneficios, 
+	.mapa-conteudo, .video, .produto-descricao,
+	 .produto-preco {
+		width: auto;
+
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-benecicios, .imagem-beneficios {
+		width: 100%;
+	}
+
+	.produtos li {
+		width: 29%;
+		padding: 20px 10px;
+		height: 340px;
+	}
+
+	.produtos {
+		width: 100%;
+
+	}
+	img.imagem-produtos {
+		width: 90px;	
+
+	}
+
+	.produtos li:hover h2 { 
+	font-size: 27px;
+	}
+
+	.produtos h2 {
+		font-size: 25px;
+	}
+
+	.produto-descricao {
+		font-size: 18px;
+	}
+
+	footer {
+		margin-top: 20px;
+	}
+
+	/*Pagina contato */
+
+	form {
+    margin: 20px 20px 20px 20px;
+	}
+
+	select {
+		margin-top: 10px;
+	}
